@@ -1,0 +1,26 @@
+.section1_aniText{
+  overflow: hidden;
+}
+
+.section1_aniText h2{
+  animation: 3s anim-lineUp ease-out;
+}
+
+@keyframes  anim-lineUp {
+  0%{ /*애니메이션의 시작*/
+    opacity: 0;
+    transform:translate(80%);
+  }
+  20%{
+    opacity:0;
+  }
+  50%{
+    opacity:1;
+    transform:translate(0%);
+  }
+  100%{ /*애니메이션의 끝*/
+    opacity:1;
+    transform:trnaslate(0%);
+  }
+}
+
